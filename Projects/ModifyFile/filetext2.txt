@@ -1,0 +1,1 @@
+JavaScript es un lenguaje de programación de un solo procesamiento secuencial, no bloqueador, asíncrono, simultáneo y con mucha flexibilidad.
