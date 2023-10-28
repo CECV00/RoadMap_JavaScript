@@ -1,20 +1,20 @@
 // Ejemplo 1: Agregar un método al prototipo de un objeto --------------------------------------------
 
-function Persona(nombre, edad) {
-    this.nombre = nombre;
-    this.edad = edad;
+function Persona (nombre, edad) {
+  this.nombre = nombre
+  this.edad = edad
 }
 
 // Agregar un método al prototipo de Persona
-Persona.prototype.saludar = function() {
-    console.log(`Hola, soy ${this.nombre} y tengo ${this.edad} años.`);
-};
+Persona.prototype.saludar = function () {
+  console.log(`Hola, soy ${this.nombre} y tengo ${this.edad} años.`)
+}
 
-const persona1 = new Persona('Juan', 30);
-const persona2 = new Persona('María', 25);
+const persona1 = new Persona('Juan', 30)
+const persona2 = new Persona('María', 25)
 
-persona1.saludar(); // Salida: "Hola, soy Juan y tengo 30 años."
-persona2.saludar(); // Salida: "Hola, soy María y tengo 25 años."
+persona1.saludar() // Salida: "Hola, soy Juan y tengo 30 años."
+persona2.saludar() // Salida: "Hola, soy María y tengo 25 años."
 
 /**
     En este ejemplo, hemos agregado un método llamado `saludar` al prototipo de la función
@@ -25,31 +25,31 @@ persona2.saludar(); // Salida: "Hola, soy María y tengo 25 años."
 // Ejemplo 2: Herencia de prototipos --------------------------------------------
 
 // Funcion animal
-function Animal(nombre) {
-    this.nombre = nombre;
+function Animal (nombre) {
+  this.nombre = nombre
 }
 
 // agrego el metodo emitir sonidos a la funcion animal
-Animal.prototype.emitirSonido = function() {
-    console.log(`${this.nombre} hace un sonido.`);
+Animal.prototype.emitirSonido = function () {
+  console.log(`${this.nombre} hace un sonido.`)
 }
 
-//creo una funcion perro, con nombre y raza
-function Perro(nombre, raza) {
-    Animal.call(this, nombre);
-    this.raza = raza;
+// creo una funcion perro, con nombre y raza
+function Perro (nombre, raza) {
+  Animal.call(this, nombre)
+  this.raza = raza
 }
 
 // Establecer la herencia del prototipo
-Perro.prototype = Object.create(Animal.prototype);
-Perro.prototype.constructor = Perro;
+Perro.prototype = Object.create(Animal.prototype)
+Perro.prototype.constructor = Perro
 
-Perro.prototype.emitirSonido = function() {
-    console.log(`${this.nombre} (raza ${this.raza}) ladra.`);
+Perro.prototype.emitirSonido = function () {
+  console.log(`${this.nombre} (raza ${this.raza}) ladra.`)
 }
 
-const miPerro = new Perro('Rex', 'Labrador');
-miPerro.emitirSonido(); // Salida: "Rex (raza Labrador) ladra."
+const miPerro = new Perro('Rex', 'Labrador')
+miPerro.emitirSonido() // Salida: "Rex (raza Labrador) ladra."
 
 /**
     En este ejemplo, `Perro` hereda propiedades y métodos de `Animal` utilizando prototipos.
@@ -59,19 +59,19 @@ miPerro.emitirSonido(); // Salida: "Rex (raza Labrador) ladra."
 
 // Ejemplo 3: Modificar propiedades en el prototipo --------------------------------------------
 
-function Vehiculo(marca) {
-    this.marca = marca;
+function Vehiculo (marca) {
+  this.marca = marca
 }
 
-Vehiculo.prototype.color = 'Desconocido';
+Vehiculo.prototype.color = 'Desconocido'
 
-const coche = new Vehiculo('Toyota');
-console.log(coche.color); // Salida: "Desconocido"
+const coche = new Vehiculo('Toyota')
+console.log(coche.color) // Salida: "Desconocido"
 
 // Modificar el color en el prototipo
-Vehiculo.prototype.color = 'Rojo';
+Vehiculo.prototype.color = 'Rojo'
 
-console.log(coche.color); // Salida: "Rojo"
+console.log(coche.color) // Salida: "Rojo"
 
 /**
 
