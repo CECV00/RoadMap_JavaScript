@@ -53,7 +53,7 @@
         necesitas implementar herencia y encapsulación, entonces definir propiedades y métodos
         en el prototipo es útil. Esto permite que las instancias hereden comportamientos de un
         prototipo común.
-    
+
     4. **Flexibilidad vs. Seguridad**: Manipular directamente un objeto puede ser más flexible, pero
         también puede llevar a errores si no tienes un buen control sobre las modificaciones. Usar
         prototipos puede proporcionar una estructura más segura y controlada para definir
@@ -74,16 +74,16 @@
 
 // TESTING CODE 1 - PROTOTYPE SIMPLE
 
-let animal = {
-    eats: true
-  };
-  
-  function Rabbit(name) {
-    this.name = name;
-  }
-  
-  Rabbit.prototype = animal;
-  
-  let rabbit = new Rabbit("White Rabbit"); //  rabbit.__proto__ == animal
-  
-  alert( rabbit.eats ); // true
+const animal = {
+  eats: true
+}
+
+function Rabbit (name) {
+  this.name = name
+}
+
+Rabbit.prototype = animal
+
+const rabbit = new Rabbit('White Rabbit') //  rabbit.__proto__ == animal
+
+alert(rabbit.eats) // true

@@ -27,15 +27,15 @@ Aquí hay una explicación más detallada:
 // Un ejemplo simple de herencia prototípica:
 const animal = {
   hablar: function () {
-    console.log("Hace un sonido");
-  },
-};
+    console.log('Hace un sonido')
+  }
+}
 
-const foca = Object.create(animal); // foca hereda de animal
-foca.hablar(); // Salida: "Hace un sonido"
+const foca = Object.create(animal) // foca hereda de animal
+foca.hablar() // Salida: "Hace un sonido"
 
-const alcon = Object.create(animal); // alcon también hereda de animal
-alcon.hablar(); // Salida: "Hace un sonido"
+const alcon = Object.create(animal) // alcon también hereda de animal
+alcon.hablar() // Salida: "Hace un sonido"
 
 /**
 
@@ -52,23 +52,23 @@ La herencia prototípica es una de las características fundamentales de JavaScr
 // SEGUNDO INTENTO 2
 
 // Definimos un constructor de objetos llamado "Animal"
-function Animal(nombre) {
-    this.nombre = nombre;
+function Animal (nombre) {
+  this.nombre = nombre
 }
 
 // Agregamos un método al prototipo de "Animal"
-Animal.prototype.saludar = function() {
-    console.log(`Hola, soy ${this.nombre}`);
+Animal.prototype.saludar = function () {
+  console.log(`Hola, soy ${this.nombre}`)
 }
 
 // Creamos un objeto "perro" que hereda de "Animal"
-const perro = new Animal("Rex");
+const perro = new Animal('Rex')
 
 // Llamamos al método del prototipo en el objeto "perro"
-perro.saludar(); // Salida: "Hola, soy Rex"
+perro.saludar() // Salida: "Hola, soy Rex"
 
 // Creamos otro objeto "gato" que también hereda de "Animal"
-const gato = new Animal("Whiskers");
+const gato = new Animal('Whiskers')
 
 // Llamamos al método del prototipo en el objeto "gato"
-gato.saludar(); // Salida: "Hola, soy Whiskers"
+gato.saludar() // Salida: "Hola, soy Whiskers"
