@@ -80,16 +80,15 @@ mientras las
 // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
 // 05. Arguments Object
 //
-function longestString() {
-  let longest = "";
+function longestString () {
+  let longest = ''
   for (let i = 0; i < arguments.length; i++) {
     if (arguments[i].length > longest.length) {
-      longest = arguments[i];
+      longest = arguments[i]
     }
   }
-  return longest;
+  return longest
 }
-
 
 // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- // ----- //
 // 0.
