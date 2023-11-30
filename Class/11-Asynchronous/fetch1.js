@@ -1,7 +1,7 @@
-async function logMovies () {
-  const response = await fetch('https://rickandmortyapi.com/api')
-  const movies = await response.json()
+async function getDataApiRAM () {
+  const response = await fetch('https://rickandmortyapi.com/api') // Promesa 1 - traer datos
+  const movies = await response.json() // promesa 2 - convertir datos
   console.log(movies)
 }
 
-logMovies()
+getDataApiRAM()
