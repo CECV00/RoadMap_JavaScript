@@ -1,23 +1,9 @@
-/*
-    const url = 'https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13'
-    const options = {
-    method: 'GET',
-    headers: {
-        'X-RapidAPI-Key': '3cb56e71c7mshec1d8f7d5fbf078p1edf88jsnf64e0d6527e4',
-        'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
-    }
-    }
+const country = 'Paris' // For Country
+const RequestURL = 'current.json' // History
 
-    try {
-    const response = await fetch(url, options)
-    const result = await response.text()
-    console.log(result)
-    } catch (error) {
-    console.error(error)
-    }
-*/
+// https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13
 
-const URL_API = 'https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13'
+const URL_API = `https://weatherapi-com.p.rapidapi.com/${RequestURL}?q=${country}`
 const options = {
   method: 'GET',
   headers: {
@@ -33,3 +19,12 @@ async function getDataApiWeather () {
 }
 
 getDataApiWeather()
+
+/*
+
+  Bibliografia -->
+
+    Documentacion:
+    https://www.weatherapi.com/docs/
+
+*/
