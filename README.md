@@ -9,6 +9,11 @@ https://roadmap.sh/javascript?s=645ab341f3d9ecfa51d91427
 
 + **Como declarar variables** {var, let, const}
 + **Hoisting** {Proceso del interprete que mueve variables, clases y funciones. a lo alto del scope y prioriza su codigo}
+
+Image:
+
+![](https://raw.githubusercontent.com/CarlosCalderon01/JavaScriptByRoadmaps/main/resource/RulesName.webp)
+
 + **Naming Rules** reglas para nombrar variables
  - mi forma estandar de nombrarlas en mis proyetos
 		let camelCasing; // For Function
