@@ -81,3 +81,34 @@
         - Relational operators
 
 **/
+
+// Conditional operators
+
+/*
+
+    Operator    Description         Comparing       Returns
+
+    ==          equal to            x == 8          false
+                                    x == 5          true
+                                    x == "5"        true
+
+    ===         equal value         x === 5         true
+                and equal type      x === "5"       false
+
+    !=          not equal           x != 8          true
+
+    !==         not equal value     x !== 5           false
+                or not equal        x !== "5"       true
+                typex               x !== 8         true
+
+    >           greater than        x > 8           false
+
+    <           less than           x < 8           true
+
+    >=          greater than        x >= 8          false
+                or equal to
+
+    <=          less than           x <= 8          true
+                or equal to
+
+*/
