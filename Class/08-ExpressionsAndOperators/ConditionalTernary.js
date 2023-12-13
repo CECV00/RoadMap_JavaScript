@@ -25,3 +25,18 @@ function examinarEdad (valor) {
 
 const functionResult = examinarEdad(age)
 console.log(functionResult)
+
+/*
+
+  Por favor al correo adjuntar un diagrama de flujo
+  y otro de bases de datos en donde se describa la siguiente situacion:
+
+  Una persona necesita desplazarse desde el portal Tunal hasta la estación de aguas
+
+  ten en cuenta desarrollar caminos alternos y situaciones de excepción
+
+  Por ejemplo, tener en cuenta situaciones como:
+
+  Tener vehículo, utilizar Transmilenio u otras posibilidades
+
+*/
