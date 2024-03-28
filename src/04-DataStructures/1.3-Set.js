@@ -21,6 +21,27 @@ conjunto.add(1) // El 1 se ignora, ya que los Sets no permiten duplicados
 console.log(conjunto.has(1)) // Salida: true
 console.log(conjunto.has(2)) // Salida: true
 
+
+// const setUsuario = new Set()
+
+// setUsuario = [
+//     nombre, 'carlangas',
+//     Apellido, 'tagnas',
+//     edad, 23
+// ]
+
+// console.log(setUsuario)
+
+
+const setUsuario = new Set();
+
+setUsuario.add('carlangas');
+setUsuario.add('tagnas');
+setUsuario.add(edad, 23);
+
+console.log(setUsuario.N);
+
+
 /**
 
 **/
